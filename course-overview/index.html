@@ -7,7 +7,7 @@
     <title>reveal.js</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/blood.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -30,12 +30,267 @@
           data-separator-notes="^Note:"  
           data-charset="iso-8859-15">
         </section> -->
-        <section>Single Horizontal Slide</section>
-        <section>
-          <section>Vertical Slide 1</section>
-          <section>Vertical Slide 2</section>
+        <section data-markdown>
+          <script type="text/template">
+### Introduction to lithospheric geodynamic modelling
+
+### *Course overview*
+
+Lars Kaislaniemi and David Whipp
+
+9-13 January 2017
+          </script>
         </section>
         <section>
+          <section data-markdown>
+            <script type="text/template">
+  ## Let's get to know one another
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Who are we?
+
+- Dave Whipp, Associate professor
+    - Geodynamics of convergent orogens
+    - Geomorphology
+
+- Lars Kaislaniemi, Postdoctoral researcher
+    - Geodynamics of the Bolivian Andes
+    - Mantle dynamics and geochemistry
+            </script>
+          </section>
+          <section>
+            <h3>Who are you?</h3>
+            <img src="img/mystery-person.png" alt="Mystery person" style="float:left;" height="300px">
+            <ul style="width: 50%;">
+              <li>Name</li>
+              <li>Home university & program</li>
+              <li>Status (Ph.D. student, MSc, etc.)</li>
+              <li>Thesis topic</li>
+              <li>Experience with coding and/or modelling</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Time to pair up</h3>
+            <img src="img/dynamic-duo.png" alt="The dynamic duo" style="float:left;" height="400px">
+            <ul style="width: 60%;">
+              <li>Before you get too comfortable please find a partner to work with for the rest of the course</li>
+              <ul>
+                <li>Ideal partnership: A stronger coder/modeller with someone with less coding/modelling skill</li>
+                <li>Groups of 3 are possible, but only if needed</li>
+              </ul> 
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+## Practical matters
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Where are we?
+![D211](img/D211.png)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Toilets
+![Toilets](img/toilets.png)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Coffee/tea
+![Coffee/tea](img/coffee.png)
+            </script>
+          </section>
+          <section>
+            <h3>Lunch</h3>
+            <p>
+              <img src="img/lunch.png" alt="Mystery person" style="float:left;" height="500px">
+              <ul style="width: 50%;">
+                <li>You can get a <b>full hot lunch</b>
+                  <ul>
+                    <li>Across the street in the Chemicum</li>
+                    <li>In the basement of the Exactum next door</li>
+                    <li>Slightly further away in the Dynamicum (pricier, but a bit better).</li>
+                  </ul>
+                <li>The Unicafe (coffee/tea spot) also has <b>sandwiches/paninis</b></li>
+              </ul>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+## Computer stuff
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Logging in
+
+- asdf
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+## Course goals and learning objectives
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Course goals
+
+- Understand the fundamental physical equations solved in numerical geodynamic models, how they work, and how they affect numerical experiments
+- Learn how to convert the main equations used to model lithospheric deformation into simple programs
+- Develop a background understanding of geodynamics that allows you to properly understand the behavior of geodynamic numerical models
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Learning objectives
+At the end of this course, students should be able to:
+
+- Solve partial differential equations using the finite-difference method
+- Differentiate between and implement various boundary and initial conditions in numerical models
+- Create their own simple 2D numerical geodynamic model including heat transfer and viscous flow
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+## Schedule
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Day 1
+<p style = "font-size:24px">***Schedule subject to change***</p>
+<p style = "font-size:24px" align="left">
+09:00-09:30 - Course overview and introductions<br/>
+09:30-10:20 - Key physical processes/concepts<br/><br/>
+
+10:20-10:35 - ***Coffee/tea break***<br/><br/>
+
+10:35-11:15 - Key physical processes/concepts (ctd.)<br/>
+11:15-11:45 - Solving equations<br/>
+11:45-12:00 - *Computer setup/introduction* (optional)<br/><br/>
+
+12:00-13:00 - ***Lunch***<br/><br/>
+
+13:00-14:20 - Python/computing essentials<br/><br/>
+
+14:20-14:35 - ***Coffee/tea break***<br/><br/>
+
+14:35-16:00 - Python/computing essentials (ctd.)
+</p>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Day 2
+<p style = "font-size:24px">***Schedule subject to change***</p>
+<p style = "font-size:24px" align="left">
+09:00-10:20 - The finite difference method, part I<br/><br/>
+
+10:20-10:35 - ***Coffee/tea break***<br/><br/>
+
+10:35-11:15 - The finite difference method, part I (ctd.)<br/>
+11:15-12:00 - Code review for the Stokes ball example<br/><br/>
+
+12:00-13:00 - ***Lunch***<br/><br/>
+
+13:00-14:20 - Heat conduction with heat production in 1D<br/><br/>
+
+14:20-14:35 - ***Coffee/tea break***<br/><br/>
+
+14:35-15:30 - Heat conduction with heat production in 1D (ctd.)<br/>
+15:30-16:00 - Code review of heat conduction with production in 1D<br/>
+</p>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Day 3
+<p style = "font-size:24px">***Schedule subject to change***</p>
+<p style = "font-size:24px" align="left">
+09:00-10:20 - Testing your code/benchmarking<br/><br/>
+
+10:20-10:35 - ***Coffee/tea break***<br/><br/>
+
+10:35-12:00 - 1D advection of a field<br/><br/>
+
+12:00-13:00 - ***Lunch***<br/><br/>
+
+13:00-14:20 - Heat transfer in 1D<br/><br/>
+
+14:20-14:35 - ***Coffee/tea break***<br/><br/>
+
+14:35-16:00 - The finite difference method, part II<br/>
+</p>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Day 4
+<p style = "font-size:24px">***Schedule subject to change***</p>
+<p style = "font-size:24px" align="left">
+09:00-10:20 - Heat transfer in 2D<br/><br/>
+
+10:20-10:35 - ***Coffee/tea break***<br/><br/>
+
+10:35-12:00 - 2D heat transfer (ctd.)<br/><br/>
+
+12:00-13:00 - ***Lunch***<br/><br/>
+
+13:00-14:00 - State of your code for heat transfer in 2D<br/>
+14:00-14:30 - Debugging your code - Pro transition-vertical-past<br/><br/>
+
+14:30-14:45 - ***Coffee/tea break***<br/><br/>
+
+14:45-15:15 - The marker-in-cell technique<br/>
+15:15-15:45 - Putting it all together<br/>
+15:45-16:00 - Overview of the remainder of the course<br/>
+</p>
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+### Day 5
+<p style = "font-size:24px">***Schedule subject to change***</p>
+<p style = "font-size:24px" align="left">
+09:00-10:20 - Stokes flow in 2D<br/><br/>
+
+10:20-10:35 - ***Coffee/tea break***<br/><br/>
+
+10:35-12:00 - Stokes flow in 2D (ctd.)<br/><br/>
+
+12:00-13:00 - ***Lunch***<br/><br/>
+
+13:00-13:40 - Designing an experiment<br/>
+13:40-14:20 - Summary and project description<br/><br/>
+
+14:20-14:35 - ***Coffee/tea break***<br/><br/>
+
+14:35-16:00 - Open working time<br/>
+</p>
+            </script>
+          </section>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+## Questions?
+          </script>
+        </section>
+        <!-- <section>
           <p class="fragment grow">grow</p>
           <p class="fragment shrink">shrink</p>
           <p class="fragment fade-out">fade-out</p>
@@ -45,8 +300,8 @@
           <p class="fragment highlight-red">highlight-red</p>
           <p class="fragment highlight-green">highlight-green</p>
           <p class="fragment highlight-blue">highlight-blue</p>
-        </section>
-        <section data-transition="slide">
+        </section> -->
+        <!-- <section data-transition="slide">
           The train goes on …
         </section>
         <section data-transition="slide">
@@ -69,7 +324,7 @@
             ## This is some markdown
             Doesn't it look nice!
           </script>
-        </section>
+        </section> -->
       </div>
     </div>
 
