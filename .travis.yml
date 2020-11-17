@@ -3,9 +3,6 @@ node_js:
   - node
 before_script:
   - git clone https://github.com/hakimel/reveal.js.git@4.1.0
-  - cd course-overview
-  - npm install -g grunt-cli
-  - cd ..
-  - cd project-overview
+  - cd reveal.js
   - npm install -g grunt-cli
   - cd ..

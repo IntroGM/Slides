@@ -1,6 +1,0 @@
-language: node_js
-node_js:
-  - node
-before_script:
-  - git clone https://github.com/hakimel/reveal.js.git@4.1.0
-  - npm install -g grunt-cli
