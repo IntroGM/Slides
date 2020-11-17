@@ -3,6 +3,3 @@ node_js:
   - node
 before_script:
   - git clone --depth 1 --branch 4.1.0 https://github.com/hakimel/reveal.js.git
-  - cd reveal.js
-  - npm install
-  - cd ..
